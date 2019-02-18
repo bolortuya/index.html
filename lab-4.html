@@ -6,6 +6,41 @@
 </head>
 <body>
   <h1> Volunteer Form </h1>
-  <form method= "POST" autocomplete ="on" action = "http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php">
+  <form method= "POST" autocomplete ="on" action = "http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php" enctype = "multipart/form-data">
+    <fieldset>
+      <h3> My Info </h3>
+      <div>
+        <label> First Name: <input type ="text" name = "text_field"> </label>
+      </div>
+      <div>
+        <label> Last Name: <input type ="text" name = "text_field" > </label>
+      </div>
+      <div>
+        <label> Phone Number: <input type ="text" name = "text_field" > </label>
+      </div>
+      <div>
+        <label> Email Address: <input type ="text" name = "text_field" > </label>
+      </div>
+      <div>
+        <p> Gender:
+          <label> Male <input type = "radio" name = "radio_field" value = M> </label>
+          <label> Female <input type = "radio" name = "radio_field" value = F> </label>
+        </p>
+      </div>
+      <div>
+        <label> Age: <select name = "menu_field"> </label>
+          <option value = "Under 18"> Under 18 </option>
+          <option vlaue = "18-24 "> 18-24 </option>
+          <option vlaue = "25-34 "> 25-34 </option>
+          <option value = "25-44" > 25-44 </option>
+          <option value = "45-54" > 45-54 </option>
+          <option value = "55-64" > 25-44 </option>
+          <option value = "65 and over" > 65 and over </option>
+
+
+      </div>
+    </fieldset>
+    <fieldset>
+    </fieldset>
 </body>
 </html>
