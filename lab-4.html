@@ -1,46 +1,64 @@
 <!DOCTYPE html>
 <html lang = "en">
 <head>
-  <meta charset="utf-8"
-  <title> </title>
+  <meta charset="utf-8">
+  <title> Volunteer Form </title>
 </head>
 <body>
-  <h1> Volunteer Form </h1>
+<h2> Volunteer Form </h2>
   <form method= "POST" autocomplete ="on" action = "http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php" enctype = "multipart/form-data">
     <fieldset>
       <h3> My Info </h3>
       <div>
-        <label> First Name: <input type ="text" name = "text_field"> </label>
+        <label> First Name: <input type ="text" name = "first_name_field"> </label>
       </div>
       <div>
-        <label> Last Name: <input type ="text" name = "text_field" > </label>
+        <label> Last Name: <input type ="text" name = "last_name_field" > </label>
       </div>
       <div>
-        <label> Phone Number: <input type ="text" name = "text_field" > </label>
+        <label> Phone Number: <input type ="text" name = "phone_field" > </label>
       </div>
       <div>
-        <label> Email Address: <input type ="text" name = "text_field" > </label>
+        <label> Email Address: <input type ="text" name = "email_field" > </label>
       </div>
       <div>
         <p> Gender:
-          <label> Male <input type = "radio" name = "radio_field" value = M> </label>
-          <label> Female <input type = "radio" name = "radio_field" value = F> </label>
+          <label> Male <input type = "radio" name = "gender_field" value = M> </label>
+          <label> Female <input type = "radio" name = "gender_field" value = F> </label>
         </p>
       </div>
       <div>
-        <label> Age: <select name = "menu_field"> </label>
+        <label> Age: <select name = "age_field">
           <option value = "Under 18"> Under 18 </option>
-          <option vlaue = "18-24 "> 18-24 </option>
-          <option vlaue = "25-34 "> 25-34 </option>
+          <option value = "18-24 "> 18-24 </option>
+          <option value = "25-34 "> 25-34 </option>
           <option value = "25-44" > 25-44 </option>
           <option value = "45-54" > 45-54 </option>
           <option value = "55-64" > 25-44 </option>
           <option value = "65 and over" > 65 and over </option>
-
-
+          </select>
+       </label>
       </div>
     </fieldset>
+<h2> My Availability </h2>
     <fieldset>
+      <div>
+        <p> Days Available: </p>
+        <label><input type="checkbox" name = "available_field[]" value ="sun"> Sunday </label><br>
+        <label><input type="checkbox" name = "available_field[]" value ="mon"> Monday</label><br>
+        <label><input type="checkbox" name = "available_field[]" value ="tues"> Tuesday</label><br>
+        <label><input type="checkbox" name = "available_field[]" value ="wed"> Wednesday</label><br>
+        <label><input type="checkbox" name = "available_field[]" value ="thurs">Thursday</label><br>
+        <label><input type="checkbox" name = "available_field[]" value ="Fri"> Friday</label><br>
+        <label><input type="checkbox" name = "available_field[]" value ="Sat"> Saturday</label><br>
+      </div>
+      <p>Any Comments? </p>
+      <textarea rows = "7" cols="40" name="comments_field" placeholder="enter here" id = comment></textarea>
     </fieldset>
+    <div>
+    <input type ="submit" value = "Send Me">
+    <input type="hidden" name="hidden_field" value="btumurbaatar@hawk.iit.edu">
+    </div>
+  </form>
 </body>
 </html>
